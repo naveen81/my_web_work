@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change Color</title>
+	<script>
+		function first(){
+			document.getElementById("first").style.backgroundColor = "red";
+		}
+		function second(){
+			document.getElementById("second").style.backgroundColor= "yellow";
+		}
+		function third(){
+			document.getElementById("third").style.backgroundColor= "blue";
+		}
+	</script>
+</head>
+<body >
+	<table border=1 align="center">
+		<tr>
+			<td id="first" onMouseOver="first()" >First</td>
+			<td id="second"  onMouseOver="second()" >Second</td>
+			<td id="third" onMouseOver="third()" >Third</td>
+		</tr>
+	</table>
+</body>
+</html>
