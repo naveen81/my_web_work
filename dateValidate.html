@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date Vallidate</title>
+	<script type="text/javascript">
+	function valid(){
+
+		var a = document.getElementById('date').value;
+		var b = document.getElementById('month').value;
+		var c = document.getElementById('year').value;
+		if(parseInt(a)>31&&parseInt(a)<1){
+			alert("Date is invalid");
+		}
+		else if(b)>12&&parseInt(b)<1){
+			alert("Month is invalid");
+		}
+		else if(parseInt(c).length>4){
+			alert("Year is invalid");
+		}
+		else
+			alert("Date is correct");
+	}
+	</script>
+</head>
+<body>
+	Date:<input type="text" id="date" />
+	Month:<input type="text" id="month" />
+	Year:<input type="text" id="year" />
+	
+	<input type="button" value="click" onclick="valid();" />
+</body>
+</html>

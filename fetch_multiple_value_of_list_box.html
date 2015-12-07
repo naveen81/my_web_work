@@ -1,0 +1,16 @@
+<html><head><script>
+function f1()
+{a=window.document.f.menu.options.length
+for (i=0;i<a ;i++)
+{if (window.document.f.menu.options[i].selected)
+{alert(window.document.f.menu.options[i].value)}}}
+  </script><body>
+<form name="f">
+<select name="menu" multiple>
+<option value="a">a
+<option value="b">b
+<option value="c">c
+<option value="d">d
+</select>
+<input type="button" name="a2" value="Click" onclick="f1()" >
+</form></body></html>

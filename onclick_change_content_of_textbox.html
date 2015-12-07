@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+var a = window.document.f1.t1.value;
+var b = window.document.f1.t2.value;
+document.f1.t1.value = b;
+document.f1.t2.value = a;
+
+}
+
+</script>
+</head>
+<body>
+<form name="f1">
+Enter text 1: <input type="text" name="t1" ><br />
+
+Enter text 1: <input type="text" name="t2">
+
+<p>When Button Click, Content of text changes.</p>
+<input type="button" value="Click" onclick="myFunction()" />
+</form>
+
+
+</body>
+</html>

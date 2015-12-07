@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax Demo</title>
+	<style type="text/css" >
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#image{
+		position: relative;
+		z-index: -1;
+	}
+	#content{
+		height: 700px;
+		width: 100%;
+		margin-top: -10px;
+		background-color: #4bbdcb;
+		position: relative;
+		z-index: 1;
+
+	}
+	
+	
+	.text{
+		padding-top: 50px;
+		text-align: center;
+		font-family: sans-serif;
+		color: #ffffff;
+	}
+	</style>
+	<script type="text/javascript">
+	var y,image;
+	function parallex(){
+		y = window.pageYOffset;
+		image = document.getElementById('image');
+		image.style.top = y * .5 +'px';
+	}
+	window.addEventListener('scroll',parallex);
+
+	</script>
+
+
+</head>
+<body>
+	
+	<img src="amazing.png" id="image" width="100%" height="700px" alt="spiderman">
+	
+	<div id="content">
+		<h2 class="text">Hello this is demo for parallax  effect. Hope you have learned something.</h2>
+	</div>	
+</body>
+</html>
